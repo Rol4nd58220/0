@@ -44,6 +44,8 @@ const Home = () => {
               '  Vfx Enthusiast',
               1000,
               '  3D Sculptor',
+              1000,
+              '  Artist',
               500,
             ]}
             speed={50}
