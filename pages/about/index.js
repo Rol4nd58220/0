@@ -89,7 +89,7 @@ const aboutData = [
 ];
 
 const About = () => {
-  return <div>About</div>;
+  return <div key={index}>About</div>;
 };
 
 export default About;
