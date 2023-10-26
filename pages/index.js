@@ -22,7 +22,7 @@ const Home = () => {
   return ( 
   <div className='bg-primary/60 h-full '>
     <Head>
-      <title>Ampalo Roland321</title>
+      <title>Ampalo Roland</title>
       <link rel="icon" type="image/png" sizes="192x192" href="./favicon.png" />
     </Head>
     {/* text */}
