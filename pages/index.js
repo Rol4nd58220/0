@@ -23,7 +23,7 @@ const Home = () => {
   <div className='bg-primary/60 h-full '>
     <Head>
       <title>Ampalo Roland</title>
-      <link rel="icon" type="image/png" sizes="192x192" href="./favicon.png">
+      <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
     </Head>
     {/* text */}
     <div className='w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10'>
