@@ -76,7 +76,7 @@ const Home = () => {
         autoPlay 
         muted 
         loop 
-        src="/public/bg-explosion-2.mp4">
+        src="./public/bg-explosion-2.mp4">
         Your browser does not support the video tag.
       </video>
       {/* particles */}
