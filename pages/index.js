@@ -90,7 +90,7 @@ const Home = () => {
         Your browser does not support the video tag.
       </video>
       {/* particles */}
-      <ParticlesContainer />
+      {/* <ParticlesContainer /> */}
     </div>
   </div>
   );
