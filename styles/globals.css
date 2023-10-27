@@ -23,7 +23,7 @@
 }
 
 #btn:hover {
-  box-shadow: 0 0 5px #ff0000, 0 0 20px #ff0022, 0 0 50px #008cff, 0 0 100px #008cff;
+  box-shadow: 0 0 5px #ff0000, 0 0 20px #ff0000, 0 0 50px #ff0000, 0 0 100px #ff0000;
 }
 
 @layer base {
