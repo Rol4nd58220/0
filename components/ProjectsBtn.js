@@ -12,7 +12,7 @@ const ProjectsBtn = () => {
     <Link href={'./about'} className="w-40 px-5 py-2 uppercase rounded-md text-sm font-semibold text-white text-opacity-80 bg-transparent border border-white border-opacity-80 transition-transform duration-500 ease-in-out select-none hover:text-opacity-100 hover:bg-blue-500 hover:border-blue-500 hover:text-shadow-lg z-10"
               id="btn"
           >
-              Button
+              About Me
     </Link>
     {/* <Link href={'./about'} className='relative w-[185px] h-[185px] flex justify-center items-center
     bg-circleStar bg-cover bg-center bg-no-repeat group'>
