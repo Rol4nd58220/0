@@ -18,6 +18,14 @@
   color: #f13024;
 }
 
+.hover\:text-shadow-lg:hover {
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+}
+
+#btn:hover {
+  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff, 0 0 100px #008cff;
+}
+
 @layer base {
   body {
     @apply bg-secondary overflow-hidden leading-relaxed;
