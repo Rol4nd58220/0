@@ -62,7 +62,7 @@ const Home = () => {
         exit="hidden" className='flex justify-center xl:hidden relative'> */}
         <button
           style={{ display: 'inline-block' }}
-          className="px-5 py-2 uppercase rounded-md text-sm font-semibold text-white text-opacity-80 bg-transparent border border-white border-opacity-80 transition-transform duration-500 ease-in-out select-none hover:text-opacity-100 hover:bg-blue-500 hover:border-blue-500 hover:text-shadow-lg"
+          className="w-40 px-5 py-2 uppercase rounded-md text-sm font-semibold text-white text-opacity-80 bg-transparent border border-white border-opacity-80 transition-transform duration-500 ease-in-out select-none hover:text-opacity-100 hover:bg-blue-500 hover:border-blue-500 hover:text-shadow-lg"
           id="btn"
         >
           Button
