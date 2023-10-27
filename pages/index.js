@@ -61,7 +61,7 @@ const Home = () => {
         {/* btn */}
         {/* <motion.div variants={fadeIn('down', 0.4)} initial="hidden" animate="show"
         exit="hidden" className='flex justify-center xl:hidden relative'> */}
-        <Link href={'./about'}>
+        <Link href={'./about'} className='mx-auto xl:mx-0 z-10'>
           <motion.button 
               variants={fadeIn('down', 0.3)} 
               initial="hidden" 
