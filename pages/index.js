@@ -60,12 +60,12 @@ const Home = () => {
         {/* btn */}
         {/* <motion.div variants={fadeIn('down', 0.4)} initial="hidden" animate="show"
         exit="hidden" className='flex justify-center xl:hidden relative'> */}
-          <button 
-            className="px-5 py-2 uppercase rounded-md text-sm font-semibold text-white text-opacity-80 bg-transparent border border-white border-opacity-80 transition-transform duration-500 ease-in-out select-none hover:text-opacity-100 hover:bg-blue-500 hover:border-blue-500 hover:text-shadow-lg"
-            id="btn"
-          >
-            Button
-          </button>
+        <button 
+          className="px-5 py-2 uppercase rounded-md text-sm font-semibold text-white text-opacity-80 bg-transparent border border-white border-opacity-80 transition-transform duration-500 ease-in-out select-none hover:text-opacity-100 hover:bg-blue-500 hover:border-blue-500 hover:text-shadow-lg"
+          id="btn"
+        >
+          Button
+        </button>
         {/* </motion.div> */}
         {/* <motion.div variants={fadeIn('down', 0.4)} initial="hidden" animate="show"
         exit="hidden" className='flex justify-center xl:hidden relative'>
