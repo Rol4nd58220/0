@@ -7,7 +7,7 @@ import Link from 'next/link';
 // icons
 import {HiArrowRight} from 'react-icons/hi2';
 
-import '../styles/ProjectsBtn.module.css';
+import '/styles/ProjectsBtn.module.css';
 
 const ProjectsBtn = () => {
   return <div className='mx-auto xl:mx-0 z-10'>
