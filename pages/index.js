@@ -84,6 +84,9 @@ const Home = () => {
       </video>
       {/* particles */}
       <ParticlesContainer />
+      <div>
+        <Avatar />
+      </div>
     </div>
   </div>
   );
