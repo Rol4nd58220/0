@@ -71,9 +71,6 @@ const Home = () => {
         </motion.div>
       </div>
     </div>
-    <div>
-        <Avatar />
-    </div>
     {/* image */}
     <div className='w-[1920px] h-[1080px] absolute right-0 bottom-0'>
       {/* bg video */}
@@ -87,6 +84,9 @@ const Home = () => {
       </video>
       {/* particles */}
       <ParticlesContainer />
+    </div>
+    <div>
+        <Avatar />
     </div>
   </div>
   );
