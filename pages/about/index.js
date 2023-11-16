@@ -39,10 +39,10 @@ const About = () => {
           <p className="mt-4">Im a passionate web developer with a focus on modern JavaScript technologies. I love creating interactive and dynamic user experiences.</p>
           <h3 className="text-xl font-semibold mt-6">Contact Details</h3>
           <ul className="list-none mt-4">
-            <li className="flex justify-center mb-2"><FaEnvelope className="mr-2" /> email@example.com</li>
-            <li className="flex justify-center mb-2"><FaPhone className="mr-2" /> +123456789</li>
-            <li className="flex justify-center mb-2"><FaLinkedin className="mr-2" /> LinkedInProfile</li>
-            <li className="flex justify-center mb-2"><FaGithub className="mr-2" /> GitHubProfile</li>
+            <li className="flex justify-center mb-2"><FaEnvelope /> email@example.com</li>
+            <li className="flex justify-center mb-2"><FaPhone/> +123456789</li>
+            <li className="flex justify-center mb-2"><FaLinkedin/> LinkedInProfile</li>
+            <li className="flex justify-center mb-2"><FaGithub/> GitHubProfile</li>
           </ul>
         </div>
 
@@ -51,8 +51,8 @@ const About = () => {
           <Image 
             src="/avatar2.png" 
             alt="Profile Picture" 
-            width={200}
-            height={200}
+            width={400}
+            height={400}
             className="rounded-full"
           />
         </div>
