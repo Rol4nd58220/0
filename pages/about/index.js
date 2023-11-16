@@ -96,6 +96,7 @@ import { fadeIn } from '../../variants'
 
 
 const About = () => {
+  const [index, setIndex] = useState(0);
   return (
     <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
         <motion.div variants={fadeIn('up', 0.2)} initial="hidden" animate="show" exit="hidden">
