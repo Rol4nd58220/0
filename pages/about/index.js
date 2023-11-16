@@ -90,7 +90,7 @@ import {
 //   },
 // ];
 
-import
+
 
 const About = () => {
   return <div>About</div>;
