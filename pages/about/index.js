@@ -90,7 +90,8 @@ import {
 //   },
 // ];
 
-
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../variants'
 
 const About = () => {
   return <div>About</div>;
