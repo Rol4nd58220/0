@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { useState } from "react";
 
 // icons
@@ -94,7 +95,13 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../../variants'
 
 const About = () => {
-  return <div>About</div>;
+  return (
+    <div>
+      <h1>About</h1>
+      <img src='./avatar2.png' alt="Avatar" className="avatar-class" />
+      {/* Rest of your component */}
+    </div>
+  );
 };
 
 export default About;
