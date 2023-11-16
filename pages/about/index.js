@@ -97,6 +97,7 @@ import { fadeIn } from '../../variants'
 
 const About = () => {
   const [index, setIndex] = useState(0);
+  console.log(index);
   return (
     <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
         <motion.div variants={fadeIn('up', 0.2)} initial="hidden" animate="show" exit="hidden">
@@ -115,14 +116,13 @@ const About = () => {
               {aboutData.map((item, itemIndex)=> {
                 return (
                   <div 
-                  key={itemIndex} 
-                  className={`${index === itemIndex && 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'} cursor-pointer capitalize xl:text-lg relative after:w-8 after:h[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`} oClick={() =+ setIndex(itemIndex)}> {item.title}</div>
+                  key={itemIndex} className={`${index === itemIndex && 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'} cursor-pointer capitalize xl:text-lg relative after:w-8 after:h[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`} oClick={() =+ setIndex(itemIndex)}> {item.title}
+                  </div>
                 )
               })}
             </div>
           </div>
         </div>
-      {/* Rest of your component */}
     </div>
   );
 };
