@@ -98,7 +98,7 @@ const About = () => {
   return (
     <div>
       <h1>About</h1>
-      <img src='./avatar2.png' alt="Avatar" className="avatar-class" />
+      <img src='./avatar2.png' alt="Avatar" className='hidden xl:flex absolute bottom- 0 left-[370px]' />
       {/* Rest of your component */}
     </div>
   );
