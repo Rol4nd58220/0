@@ -1,3 +1,5 @@
+import React, { useState } from 'react'
+
 // icons
 import {
   FaHtml5,
@@ -88,8 +90,13 @@ import {
 //   },
 // ];
 
+import Circle from '../../components/Cicles';
+
 const About = () => {
-  return <div>About</div>;
+  const [index, setIndex] = useState(0);
+  return <div>
+    </Circles>
+  </div>;
 };
 
 export default About;
