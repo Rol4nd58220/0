@@ -90,13 +90,15 @@ import {
 //   },
 // ];
 
-import Circle from '../../components/Cicles';
+import Circles from '../../components/Circles';
 
 const About = () => {
   const [index, setIndex] = useState(0);
-  return <div>
-    </Circles>
-  </div>;
+  return (
+    <div>
+      <Circles />
+    </div>
+  );
 };
 
 export default About;
