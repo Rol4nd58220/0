@@ -33,7 +33,7 @@ const About = () => {
   return (
     <div className="container mx-auto flex flex-col lg:flex-row items-center justify-around py-6">
       {/* Bio Section */}
-      <div className="lg:w-1/4 px-4 mt-4 lg:mt-20 text-center">
+      <div className="lg:w-1/4 px-4 flex flex-col justify-center text-center h-96"> {/* Adjust h-96 as needed */}
         <h2 className="text-2xl font-bold">About Me</h2>
         <p className="mt-4">Im a passionate web developer with a focus on modern JavaScript technologies. I love creating interactive and dynamic user experiences.</p>
         <h3 className="text-xl font-semibold mt-6">Contact Details</h3>
@@ -46,18 +46,18 @@ const About = () => {
       </div>
 
       {/* Image Section */}
-      <div className="lg:w-1/4 px-4 mt-4 lg:mt-20 flex justify-center">
+      <div className="lg:w-1/4 px-4 flex justify-center h-96"> {/* Adjust h-96 as needed */}
         <Image 
           src="/avatar2.png" 
           alt="Profile Picture" 
           width={200}
           height={200}
-          className="rounded-full"
+          className="rounded-full self-center"
         />
       </div>
 
       {/* Skills Section */}
-      <div className="skills-section lg:w-1/4 px-4 mt-4 lg:mt-20 text-center">
+      <div className="skills-section lg:w-1/4 px-4 flex flex-col justify-center text-center h-96"> {/* Adjust h-96 as needed */}
         <h3 className="text-2xl font-bold">My Skills</h3>
         {skills.map((skill, index) => (
           <SkillBar key={index} skill={skill.name} level={skill.level} />
