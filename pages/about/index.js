@@ -25,7 +25,7 @@ import Circles from '../../components/Circles';
 const About = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div>
+    <div className='bg-primary/60 h-full '>
       <Circles />
       {/* Avatar img */}
     </div>
