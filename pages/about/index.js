@@ -31,7 +31,7 @@ const About = () => {
   ];
 
   return (
-    <div className="container mx-auto py-6 h-full">
+    <div className="bg-primary/60 container mx-auto py-6 h-full">
       <div className="flex flex-col lg:flex-row justify-around items-center h-full">
         {/* Bio Section */}
         <div className="lg:w-1/4 px-4 mx-auto">
@@ -51,15 +51,15 @@ const About = () => {
           <Image 
             src="/avatar2.png" 
             alt="Profile Picture" 
-            width={800}
-            height={800}
+            width={1200}
+            height={1200}
             className="rounded-full"
           />
         </div>
 
         {/* Skills Section */}
         <div className="skills-section lg:w-1/4 px-4 text-center mx-auto">
-          <h3 className="text-2xl font-bold">My Skills</h3>
+          <h3 className="text-3xl font-bold mb-2">My Skills</h3>
           {skills.map((skill, index) => (
             <SkillBar key={index} skill={skill.name} level={skill.level} />
           ))}
