@@ -9,10 +9,8 @@ import {
   FaGithub,
 } from "react-icons/fa";
 
-// Assuming Circles is a component in your project
 import Circles from '../../components/Circles';
 
-// SkillBar component for displaying skills
 const SkillBar = ({ skill, level }) => (
   <div className="flex items-center justify-center mb-4">
     <span className="mr-2 text-lg font-medium">{skill}</span>
@@ -23,7 +21,6 @@ const SkillBar = ({ skill, level }) => (
 );
 
 const About = () => {
-  // Sample skills data
   const skills = [
     { name: 'Programmer', level: 90 },
     { name: '3D Artist', level: 85 },
@@ -35,7 +32,7 @@ const About = () => {
   return (
     <div className="container mx-auto flex flex-col lg:flex-row items-center justify-around py-6">
       {/* Bio Section */}
-      <div className="lg:w-1/4 px-4 mb-6 lg:mb-0 text-center top-10">
+      <div className="lg:w-1/4 px-4 mt-4 lg:mt-20 text-center">
         <h2 className="text-2xl font-bold">About Me</h2>
         <p className="mt-4">Im a passionate web developer with a focus on modern JavaScript technologies. I love creating interactive and dynamic user experiences.</p>
         <h3 className="text-xl font-semibold mt-6">Contact Details</h3>
@@ -48,18 +45,18 @@ const About = () => {
       </div>
 
       {/* Image Section */}
-      <div className="lg:w-1/4 px-4 mb-6 lg:mb-0 flex justify-center top-10">
+      <div className="lg:w-1/4 px-4 mt-4 lg:mt-20 flex justify-center">
         <Image 
           src="/avatar2.png" 
           alt="Profile Picture" 
-          width={200} // Adjust as needed
-          height={200} // Adjust as needed
+          width={200} 
+          height={200} 
           className="rounded-full"
         />
       </div>
 
       {/* Skills Section */}
-      <div className="skills-section lg:w-1/4 px-4 text-center top-10">
+      <div className="skills-section lg:w-1/4 px-4 mt-4 lg:mt-20 text-center">
         <h3 className="text-2xl font-bold">My Skills</h3>
         {skills.map((skill, index) => (
           <SkillBar key={index} skill={skill.name} level={skill.level} />
