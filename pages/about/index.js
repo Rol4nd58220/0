@@ -91,9 +91,8 @@ const aboutData = [
   },
 ];
 
-import { motion } from 'framer-motion'
-import { fadeIn } from '../../variants'
-
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../variants';
 
 const About = () => {
   const [index, setIndex] = useState(0);
@@ -116,13 +115,25 @@ const About = () => {
             {aboutData.map((item, itemIndex) => (
               <div 
                 key={itemIndex} 
-                className={`${index === itemIndex && 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300':} cursor-pointer capitalize xl:text-lg relative after:w-8 after:h[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`} 
+                className={`${index === itemIndex ? 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300' : ''} cursor-pointer capitalize xl:text-lg relative after:w-8 after:h[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`} 
                 onClick={() => setIndex(itemIndex)}
               > 
-                  {item.title}
+                {item.title}
               </div>
             ))}
           </div>
+          {aboutData[index]?.info.map((info, infoIndex) => (
+            <div key={infoIndex}>
+              <h3>{info.title}</h3>
+              <div className="flex">
+                {info.icons?.map((icon, iconIndex) => (
+                  <div key={iconIndex} className="m-2">
+                    {icon}
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
