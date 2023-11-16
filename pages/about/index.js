@@ -35,10 +35,10 @@ const About = () => {
       {/* Image Section */}
       <div className="lg:w-1/3 px-4 mb-6 lg:mb-0">
         <Image 
-          src="/profile.jpg" 
+          src="./avatar2.png" 
           alt="Profile Picture" 
-          width={200}  // Adjust as needed
-          height={200} // Adjust as needed
+          width={481}  // Adjust as needed
+          height={820} // Adjust as needed
           className="rounded-full" // For rounded image
         />
       </div>
