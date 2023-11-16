@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Image from 'next/image';
 
 // icons
 import {
@@ -29,12 +30,22 @@ import Circles from '../../components/Circles';
 const About = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div className="bg-primary/60 h-full container mx-auto flex flex-col lg:flex-row">
+    <div className="bg-primary/60 h-full container mx-auto flex flex-col lg:flex-row items-center justify-center py-6">
       <Circles />
+      {/* Image Section */}
+      <div className="lg:w-1/3 px-4 mb-6 lg:mb-0">
+        <Image 
+          src="/profile.jpg" 
+          alt="Profile Picture" 
+          width={200}  // Adjust as needed
+          height={200} // Adjust as needed
+          className="rounded-full" // For rounded image
+        />
+      </div>
       {/* Avatar and Bio Section */}
-      <div className="bio-section lg:w-1/2 px-4 py-6">
+      <div className="bio-section lg:w-1/3 px-4">
         <h2 className="text-2xl font-bold text-left">About Me</h2>
-        <p className="text-left mt-4"> I'm a passionate web developer with a focus on modern JavaScript technologies. I love creating interactive and dynamic user experiences.</p>
+        <p className="text-left mt-4"> Im a passionate web developer with a focus on modern JavaScript technologies. I love creating interactive and dynamic user experiences.</p>
         <h3 className="text-xl font-semibold text-left mt-6">Contact Details</h3>
         <ul className="list-none mt-4">
           <li className="flex items-center mb-2"><FaEnvelope className="mr-2" /> email@example.com</li>
