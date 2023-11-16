@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 // icons
 import {
   FaHtml5,
@@ -87,6 +89,8 @@ import {
 //     ],
 //   },
 // ];
+
+import
 
 const About = () => {
   return <div>About</div>;
