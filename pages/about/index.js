@@ -15,7 +15,7 @@ import { fadeIn } from '../../variants'
 
 // SkillBar component for displaying skills
 const SkillBar = ({ skill, level }) => (
- <div className="bg-primary/60 mb-6">
+ <div className="mb-6">
   <div className="text-lg font-medium text-left">{skill}</div>
   <div className="mt-2 w-full bg-gray-200 rounded-full h-4">
    <div className="bg-blue-600 h-4 rounded-full" style={{ width: `${level}%` }}></div>
