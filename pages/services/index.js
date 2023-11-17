@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/free-mode';
 
 // Import or define ServiceData
-import ServiceData from '../constant'; // Adjust the path as necessary
+import ServiceData from '../services/constants'; // Adjust the path as necessary
 
 // ... (RxArrowTopRight usage if needed)
 
