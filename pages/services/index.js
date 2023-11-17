@@ -13,7 +13,7 @@ const Services = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
   const nextImage = () => {
-    setCurrentImage((prev) => (prev + 1) % images.length);
+    setCurrentImage((next) => (next + 1) % images.length);
   };
 
   const prevImage = () => {
@@ -37,14 +37,4 @@ const Services = () => {
             <button onClick={prevImage} className="text-white text-2xl focus:outline-none ml-4">
               &#8249;
             </button>
-            <button onClick={nextImage} className="text-white text-2xl focus:outline-none mr-4">
-              &#8250;
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default Services;
+            <button onClick={nextImage} className="text-white text-2xl focus
