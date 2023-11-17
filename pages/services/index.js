@@ -1,10 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
+import FreeMode from "swiper/free-mode";
+import Pagination from "swiper/pagination";
 
-import { FreeMode, Pagination } from "swiper/modules";
 
 import { RxArrowTopRight } from "react-icons/rx";
 import { ServiceData } from "../services/constants/index";
