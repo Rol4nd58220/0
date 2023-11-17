@@ -1,42 +1,38 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const Services = () => {
-  const [items, setItems] = useState([]);
-  const [page, setPage] = useState(0);
+  const [items, setItems] = useState(['Card 1', 'Card 2', 'Card 3']); // Your items here
+  const [activeIndex, setActiveIndex] = useState(0); // Index of the active card
 
-  useEffect(() => {
-    // Function to fetch data
-    const fetchMoreData = (newPage) => {
-      // Fetch data and update state
-      // This is a mock function, replace with your data fetching logic
-      const moreItems = new Array(10).fill(null).map((_, index) => `Item ${newPage * 10 + index + 1}`);
-      setItems(moreItems);
-    };
-
-    fetchMoreData(page);
-  }, [page]); // Dependency array ensures effect runs on page change
-
-  // Function to handle page changes
-  const handlePrevPage = () => {
-    setPage((prevPage) => Math.max(prevPage - 1, 0));
+  const handleNext = () => {
+    setActiveIndex((prevIndex) => (prevIndex + 1) % items.length);
   };
 
-  const handleNextPage = () => {
-    setPage((prevPage) => prevPage + 1);
+  const handlePrev = () => {
+    setActiveIndex((prevIndex) => (prevIndex - 1 + items.length) % items.length);
   };
 
   return (
-    <div className="flex flex-col items-center justify-center">
-      <h2>Services</h2>
-      <div className="flex items-center justify-center my-4">
-        <button onClick={handlePrevPage} className="mr-4 p-2 bg-gray-200 rounded">Prev</button>
-        <div className="flex flex-col items-center">
-          {items.map((item, index) => (
-            <div key={index} className="p-2 m-2 border rounded shadow">{item}</div>
-          ))}
-        </div>
-        <button onClick={handleNextPage} className="ml-4 p-2 bg-gray-200 rounded">Next</button>
+    <div className="flex items-center justify-center h-screen">
+      <button onClick={handlePrev} className="p-2 bg-gray-200 rounded">Prev</button>
+      
+      <div className="relative mx-4">
+        {items.map((item, index) => (
+          <div 
+            key={index}
+            className={`absolute top-0 left-1/2 transform -translate-x-1/2 w-64 h-32 p-4 border rounded transition-all duration-500 ${index === activeIndex ? 'opacity-100 scale-100' : 'opacity-50 scale-75'}`}
+            style={{
+              zIndex: index === activeIndex ? 2 : 1,
+              filter: index === activeIndex ? 'none' : 'blur(4px)',
+              transitionDelay: index === activeIndex ? '0.1s' : '0s'
+            }}
+          >
+            {item}
+          </div>
+        ))}
       </div>
+
+      <button onClick={handleNext} className="p-2 bg-gray-200 rounded">Next</button>
     </div>
   );
 };
