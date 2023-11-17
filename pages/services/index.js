@@ -9,7 +9,10 @@ const Services = () => {
   };
 
   const handlePrev = () => {
-    setActiveIndex((prevIndex) => (prevIndex - 1 + items.length) % items.length);
+    setActiveIndex((prevIndex) => {
+      const newIndex = prevIndex - 1;
+      return newIndex < 0 ? items.length - 1 : newIndex;
+    });
   };
 
   return (
