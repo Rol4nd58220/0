@@ -5,8 +5,8 @@ import Image from 'next/image';
 import {
   FaEnvelope,
   FaPhone,
-  FaLinkedin,
-  FaGithub,
+  FaMap,
+  FaGlobe,
 } from "react-icons/fa";
 
 import Circles from '../../components/Circles';
@@ -44,8 +44,8 @@ const About = () => {
           <ul className="list-none mt-4">
             <li className="flex items-center justify-start mb-2 text-xl"><FaEnvelope className="mr-2" /> email@example.com</li>
             <li className="flex items-center justify-start mb-2 text-xl"><FaPhone className="mr-2" /> +123456789</li>
-            <li className="flex items-center justify-start mb-2 text-xl"><FaLinkedin className="mr-2" /> LinkedInProfile</li>
-            <li className="flex items-center justify-start mb-2 text-xl"><FaGithub className="mr-2" /> GitHubProfile</li>
+            <li className="flex items-center justify-start mb-2 text-xl"><FaMap className="mr-2" /> LinkedInProfile</li>
+            <li className="flex items-center justify-start mb-2 text-xl"><FaGlobe className="mr-2" /> GitHubProfile</li>
           </ul>
         </motion.div>
 
