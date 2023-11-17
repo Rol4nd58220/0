@@ -47,7 +47,7 @@ const About = () => {
         </div>
 
         {/* Image Section */}
-        <div className="lg:w-1/4 px-4 flex justify-center mx-auto">
+        <div className="bg-primary/60 lg:w-1/4 px-4 flex justify-center mx-auto">
           <Image 
             src="/avatar2.png" 
             alt="Profile Picture" 
@@ -58,7 +58,7 @@ const About = () => {
         </div>
 
         {/* Skills Section */}
-        <div className="skills-section lg:w-1/4 px-4 text-center mx-auto">
+        <div className="bg-primary/60 skills-section lg:w-1/4 px-4 text-center mx-auto">
           <h3 className="text-3xl font-bold mb-2">My Skills</h3>
           {skills.map((skill, index) => (
             <SkillBar key={index} skill={skill.name} level={skill.level} />
