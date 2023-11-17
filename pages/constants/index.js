@@ -7,10 +7,10 @@ import {
     RxAccessibility,
   } from "react-icons/rx";
   
-//   import SpaceCity1 from "../assets/SpaceCity1.jpg";
-//   import SpaceCity5 from "../assets/SpaceCity5.jpeg";
-//   import SpaceCity6 from "../assets/SpaceCity6.jpeg";
-//   import SpaceCity7 from "../assets/SpaceCity7.jpeg";
+  import SpaceCity1 from "../../public/elementary.jpg";
+  import SpaceCity5 from "../../public/juniorHighSchool.jpg";
+  import SpaceCity6 from "../../public/seniorHighschool.jpg";
+//   import SpaceCity7 from "../../public";
 //   import SpaceCity8 from "../assets/SpaceCity8.jpeg";
 //   import SpaceCity9 from "../assets/SpaceCity9.jpeg";
   
