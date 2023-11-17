@@ -9,7 +9,7 @@ import Pagination from "swiper/pagination";
 import { RxArrowTopRight } from "react-icons/rx";
 import { ServiceData } from "../services/constants/index";
 
-const ActiveSlider = () => {
+const Services = () => {
   return (
     <div className="flex items-center justify-center flex-col h-[900px] bg-[#6c34af]">
       <Swiper
