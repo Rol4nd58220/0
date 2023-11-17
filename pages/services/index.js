@@ -2,9 +2,9 @@ import { useState } from 'react';
 
 const Services = () => {
   const images = [
-    { path: '/path/to/image1.jpg', title: 'Title 1' },
-    { path: '/path/to/image2.jpg', title: 'Title 2' },
-    { path: '/path/to/image3.jpg', title: 'Title 3' },
+    { path: './elementary.jpg', title: 'Elementary' },
+    { path: './juniorHighschool.jpg', title: 'Junior Highschool' },
+    { path: './seniorHighschool.jpg', title: 'Senior Highschool' },
     { path: '/path/to/image4.jpg', title: 'Title 4' },
     { path: '/path/to/image5.jpg', title: 'Title 5' },
     { path: '/path/to/image6.jpg', title: 'Title 6' },
