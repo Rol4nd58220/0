@@ -33,7 +33,7 @@ const About = () => {
  ];
 
  return (
-  <div className="container mx-auto py-6 h-full">
+  <div className="bg-primary/60 container mx-auto py-6 h-full">
    <div className="flex flex-col lg:flex-row justify-around items-center h-full">
     {/* Bio Section */}
     <motion.div variants={fadeIn('down', 0.2)} initial="hidden" animate="show"
