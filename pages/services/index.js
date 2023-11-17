@@ -7,7 +7,7 @@ import "swiper/css/free-mode";
 import { FreeMode, Pagination } from "swiper/modules";
 
 import { RxArrowTopRight } from "react-icons/rx";
-import { ServiceData } from "../constants";
+import { ServiceData } from "../services/constants/index";
 
 const ActiveSlider = () => {
   return (
