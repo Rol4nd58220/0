@@ -25,7 +25,11 @@ const Services = () => {
       <h1 className="text-3xl font-bold mb-4">Services</h1>
 
       <div className="relative">
-        <img src={images[currentImage].path} alt={images[currentImage].title} className="w-full h-64 object-cover" />
+        <img
+          src={images[currentImage].path}
+          alt={images[currentImage].title}
+          className={`w-full h-64 object-cover ${currentImage === 0 ? 'block' : 'hidden'}`}
+        />
 
         <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col items-center justify-center text-white">
           <h2 className="text-xl font-bold mb-2">{images[currentImage].title}</h2>
@@ -42,7 +46,7 @@ const Services = () => {
 
       <div className="grid grid-cols-2 gap-4 mt-4">
         {images.map((image, index) => (
-          <div key={index} className={`relative ${index === currentImage ? 'hidden' : ''}`}>
+          <div key={index} className={`relative ${index === currentImage ? 'hidden' : 'block'}`}>
             <img src={image.path} alt={image.title} className="w-full h-40 object-cover mb-2" />
             <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center text-white">
               <h3 className="text-sm font-bold">{image.title}</h3>
