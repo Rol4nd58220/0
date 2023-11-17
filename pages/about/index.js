@@ -42,10 +42,10 @@ const About = () => {
           <p className="mt-4 text-xl">Im a passionate web developer with a focus on modern JavaScript technologies. I love creating interactive and dynamic user experiences.</p>
           <h3 className="text-3xl font-semibold mt-6">Contact Details</h3>
           <ul className="list-none mt-4">
-            <li className="flex items-center justify-start mb-2 text-xl"><FaEnvelope className="mr-2" /> rolandampalo5822@gmail.com</li>
-            <li className="flex items-center justify-start mb-2 text-xl"><FaPhone className="mr-2" /> +639294114330</li>
-            <li className="flex items-center justify-start mb-2 text-xl"><FaMap className="mr-2" /> Crystal Cave, Bakakeng Central</li>
-            <li className="flex items-center justify-start mb-2 text-xl"><FaGlobe className="mr-2" /> https://rol4nd58220.github.io/</li>
+            <li className="flex items-center justify-start mb-2"><FaEnvelope className="mr-2" /> rolandampalo5822@gmail.com</li>
+            <li className="flex items-center justify-start mb-2"><FaPhone className="mr-2" /> +639294114330</li>
+            <li className="flex items-center justify-start mb-2"><FaMap className="mr-2" /> Crystal Cave, Bakakeng Central</li>
+            <li className="flex items-center justify-start mb-2"><FaGlobe className="mr-2" /> https://rol4nd58220.github.io/</li>
           </ul>
         </motion.div>
 
