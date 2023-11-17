@@ -1,54 +1,49 @@
-import React, { useState } from 'react';
+import React from 'react'
+import {Swiper, SwiperSlide} from 'swiper/react'
+
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/free-mode'
+
+import {FreeMode, Pagination} from 'swiper/modules'
+
+import {RxArrowTopRight} from 'react-icons/rx'
 
 const Services = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const items = ['Card 1', 'Card 2', 'Card 3'];
-
-  const handleNext = () => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % items.length);
-  };
-
-  const handlePrev = () => {
-    setActiveIndex((prevIndex) => {
-      const newIndex = prevIndex - 1;
-      return newIndex < 0 ? items.length - 1 : newIndex;
-    });
-  };
-
   return (
-    <div className="flex items-center justify-center h-screen">
-      <button onClick={handlePrev} className="p-2 bg-gray-200 rounded">Prev</button>
-      
-      <div className="relative w-full max-w-3xl mx-4">
-        <div className="flex justify-center items-center">
-          {items.map((item, index) => {
-            let scale = 1;
-            let opacity = 1;
-            if (index !== activeIndex) {
-              scale = 0.8;
-              opacity = 0.5;
+    <div className='flex items-center justify-center flex-col h-screen bg-[#6c34af]'>
+      <Swiper
+          breakpoints={{
+            340: {
+              slidePerview: 2,
+              spaceBetween: 15
+            },
+            700: {
+              slidePerview: 3,
+              spaceBetween: 15
             }
-            return (
-              <div
-                key={index}
-                style={{
-                  transform: `translateX(${(index - activeIndex) * 150}px) scale(${scale})`,
-                  opacity: opacity,
-                  transition: 'transform 0.5s, opacity 0.5s',
-                  position: 'absolute',
-                }}
-                className="w-64 h-32 p-4 border rounded"
-              >
-                {item}
-              </div>
-            );
-          })}
-        </div>
-      </div>
+          }}
 
-      <button onClick={handleNext} className="p-2 bg-gray-200 rounded">Next</button>
+          freeMode={true}
+          pagination={{
+            clickable: true
+          }}
+          modules={{FreeMode, Pagination}}
+          className='max-w-[90%] lg:max-w-[80%]'
+      >
+          {ServiceData.map((item) => (
+            <SwiperSlide key={item.title}>
+              <div className='flex flex-col gap-6 group relative shadow-lg text-white rounded-xl px-6 py-8 h-[250px] w-[215px] lg:h-[400px] lg:w-[350px]'>
+
+              </div>
+
+            </SwiperSlide>
+          ))}
+
+      </Swiper>
+
     </div>
-  );
-};
+  )
+}
 
 export default Services;
