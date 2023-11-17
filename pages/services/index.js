@@ -28,7 +28,7 @@ const Services = () => {
         <img
           src={images[currentImage].path}
           alt={images[currentImage].title}
-          className="w-full h-full"
+          className="w-full h-full object-cover"
         />
 
         <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col items-center justify-center text-white">
