@@ -21,14 +21,14 @@ const Services = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center m-auto w-full">
-      <h1 className="flex items-center justify-center text-3xl font-bold mb-4">Achievements</h1>
+    <div className="flex flex-col items-center justify-center mx-auto w-full max-w-screen-lg">
+      <h1 className="text-3xl font-bold my-4">Achievements</h1>
 
-      <div className="relative w-full h-150 object-contain">
+      <div className="relative w-full h-96 overflow-hidden rounded-lg shadow-md">
         <img
           src={images[currentImage].path}
           alt={images[currentImage].title}
-          className="w-full h-150 object-cover"
+          className="w-full h-full object-cover"
         />
 
         <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col items-center justify-center text-white">
