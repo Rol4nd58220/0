@@ -4,7 +4,7 @@ const Services = () => {
   const images = [
     { path: './elementary.jpg', title: 'Elementary' },
     { path: './juniorHighSchool.jpg', title: 'Junior Highschool' },
-    { path: './seniorHighschool.jpg', title: 'Senior Highschool' },
+    { path: './SeniorHighschool.jpg', title: 'Senior Highschool' },
     { path: './belovedMother.png', title: 'Beloved Mother' },
     { path: './greatDad.png', title: 'Beloved Father' },
     { path: './jesseMartinez.jpg', title: 'Jessie Martirez' },
@@ -22,9 +22,9 @@ const Services = () => {
 
   return (
     <div className="flex flex-col items-center justify-center m-auto w-full">
-      <h1 className="text-3xl font-bold mb-4">Services</h1>
+      <h1 className="flex items-center justify-center text-3xl font-bold mb-4">Achievements</h1>
 
-      <div className="relative w-full h-64 object-contain">
+      <div className="relative w-[200px] h-full object-contain">
         <img
           src={images[currentImage].path}
           alt={images[currentImage].title}
