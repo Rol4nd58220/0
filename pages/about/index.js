@@ -15,7 +15,7 @@ import { fadeIn } from '../../variants'
 
 // SkillBar component for displaying skills
 const SkillBar = ({ skill, level }) => (
- <div className="mb-6">
+ <div className="bg-primary/60 mb-6">
   <div className="text-lg font-medium text-left">{skill}</div>
   <div className="mt-2 w-full bg-gray-200 rounded-full h-4">
    <div className="bg-blue-600 h-4 rounded-full" style={{ width: `${level}%` }}></div>
@@ -34,7 +34,7 @@ const About = () => {
 
  return (
   <div className="container mx-auto py-6 h-full">
-   <div className="bg-primary/60 flex flex-col lg:flex-row justify-around items-center h-full">
+   <div className="flex flex-col lg:flex-row justify-around items-center h-full">
     {/* Bio Section */}
     <motion.div variants={fadeIn('down', 0.2)} initial="hidden" animate="show"
     exit="hidden" className="lg:w-1/4 px-4 mx-auto">
