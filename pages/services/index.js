@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 const Services = () => {
-  const [items, setItems] = useState(['Card 1', 'Card 2', 'Card 3']); // Your items
-  const [activeIndex, setActiveIndex] = useState(0); // Index of the active card
+  const [activeIndex, setActiveIndex] = useState(0);
+  const items = ['Card 1', 'Card 2', 'Card 3'];
 
   const handleNext = () => {
     setActiveIndex((prevIndex) => (prevIndex + 1) % items.length);
@@ -13,24 +13,34 @@ const Services = () => {
   };
 
   return (
-    <div className="flex items-center justify-between h-screen px-4">
+    <div className="flex items-center justify-center h-screen">
       <button onClick={handlePrev} className="p-2 bg-gray-200 rounded">Prev</button>
       
-      <div className="flex overflow-hidden relative mx-4" style={{ height: '200px', width: 'calc(100% - 8rem)' }}>
-        {items.map((item, index) => (
-          <div 
-            key={index}
-            className={`absolute w-64 h-full p-4 border rounded transition-all duration-500 ${index === activeIndex ? 'opacity-100 scale-100' : 'opacity-50 scale-75'}`}
-            style={{
-              zIndex: index === activeIndex ? 2 : 1,
-              filter: index === activeIndex ? 'none' : 'blur(4px)',
-              left: `${index * 70}%`, // Adjust this value for spacing between cards
-              transform: 'translateX(-50%)'
-            }}
-          >
-            {item}
-          </div>
-        ))}
+      <div className="relative w-full max-w-3xl mx-4">
+        <div className="flex justify-center items-center">
+          {items.map((item, index) => {
+            let scale = 1;
+            let opacity = 1;
+            if (index !== activeIndex) {
+              scale = 0.8;
+              opacity = 0.5;
+            }
+            return (
+              <div
+                key={index}
+                style={{
+                  transform: `translateX(${(index - activeIndex) * 150}px) scale(${scale})`,
+                  opacity: opacity,
+                  transition: 'transform 0.5s, opacity 0.5s',
+                  position: 'absolute',
+                }}
+                className="w-64 h-32 p-4 border rounded"
+              >
+                {item}
+              </div>
+            );
+          })}
+        </div>
       </div>
 
       <button onClick={handleNext} className="p-2 bg-gray-200 rounded">Next</button>
