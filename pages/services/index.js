@@ -5,9 +5,9 @@ const Services = () => {
     { path: './elementary.jpg', title: 'Elementary' },
     { path: './juniorHighSchool.jpg', title: 'Junior Highschool' },
     { path: './seniorHighschool.jpg', title: 'Senior Highschool' },
-    { path: './belovedMother.jpg', title: 'Beloved Mother' },
-    { path: '.greatDad.jpg', title: 'Beloved Father' },
-    { path: '.jesseMartinez.jpg', title: 'Jessie Martirez' },
+    { path: './belovedMother.png', title: 'Beloved Mother' },
+    { path: './greatDad.png', title: 'Beloved Father' },
+    { path: './jesseMartinez.jpg', title: 'Jessie Martirez' },
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
