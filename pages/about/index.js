@@ -76,7 +76,7 @@ const About = () => {
           className="lg:w-1/4 px-4 flex justify-center mx-auto"
         >
           <Image
-            src="/avatar2.png"
+            src="./avatar2.png"
             alt="Profile Picture"
             width={1200}
             height={1200}
