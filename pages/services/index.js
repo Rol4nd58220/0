@@ -3,7 +3,7 @@ import { useState } from 'react';
 const Services = () => {
   const images = [
     { path: './elementary.jpg', title: 'Elementary' },
-    { path: './juniorHighschool.jpg', title: 'Junior Highschool' },
+    { path: './juniorHighSchool.jpg', title: 'Junior Highschool' },
     { path: './seniorHighschool.jpg', title: 'Senior Highschool' },
     { path: '/path/to/image4.jpg', title: 'Title 4' },
     { path: '/path/to/image5.jpg', title: 'Title 5' },
@@ -13,7 +13,7 @@ const Services = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
   const nextImage = () => {
-    setCurrentImage((next) => (next + 1) % images.length);
+    setCurrentImage((prev) => (prev + 1) % images.length);
   };
 
   const prevImage = () => {
@@ -37,4 +37,14 @@ const Services = () => {
             <button onClick={prevImage} className="text-white text-2xl focus:outline-none ml-4">
               &#8249;
             </button>
-            <button onClick={nextImage} className="text-white text-2xl focus
+            <button onClick={nextImage} className="text-white text-2xl focus:outline-none mr-4">
+              &#8250;
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Services;
