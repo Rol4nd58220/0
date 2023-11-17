@@ -24,7 +24,7 @@ const Services = () => {
     <div className="flex flex-col items-center justify-center mx-auto w-full max-w-screen-lg">
       <h1 className="text-3xl font-bold my-4">Achievements</h1>
 
-      <div className="relative w-full h-96 overflow-hidden rounded-lg shadow-md">
+      <div className="relative w-full h-full overflow-hidden rounded-lg shadow-md">
         <img
           src={images[currentImage].path}
           alt={images[currentImage].title}
