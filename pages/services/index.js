@@ -14,7 +14,7 @@ const Services = () => {
 
   return (
     <div className="flex items-center justify-between h-screen px-4">
-      <button onClick={handlePrev} className="p-2 bg-gray-200 justify-end rounded">Prev</button>
+      <button onClick={handlePrev} className="p-2 bg-gray-200 rounded">Prev</button>
       
       <div className="flex overflow-hidden relative mx-4" style={{ height: '200px', width: 'calc(100% - 8rem)' }}>
         {items.map((item, index) => (
@@ -33,7 +33,7 @@ const Services = () => {
         ))}
       </div>
 
-      <button onClick={handleNext} className="p-2 bg-gray-200 justify-start rounded">Next</button>
+      <button onClick={handleNext} className="p-2 bg-gray-200 rounded">Next</button>
     </div>
   );
 };
